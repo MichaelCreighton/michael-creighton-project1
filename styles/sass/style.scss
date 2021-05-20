@@ -44,6 +44,7 @@ li {
 }
 
 // header styles
+//index header styles
 header {
   background: url(../../under-the-sea-assets/header-image.jpg);
   color: #FFFFFF;
@@ -51,31 +52,30 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 .title-pic {
-  display: flex;
+  // display: flex;
 }
 
 // This trick comes courtesy of CSS expert Una Kravets.
 //  A simple utility class, .full-width, will break the image out of it’s parent container using some negative margins, relative positioning, and the viewport width (vw) unit of measure.
-.full-width {
-  left: 5%;
-  // margin-left: -50vw;
-  margin-right: -10vw;
-  max-width: 80vw;
-  position: relative;
-  // right: 30%;
-  width: 100vw;
-}
-h1 {
+// .full-width {
+//   left: 5%;
+//   // margin-left: -50vw;
+//   margin-right: -10vw;
+//   max-width: 80vw;
+//   position: relative;
+//   // right: 30%;
+//   width: 100vw;
+// }
+header h1 {
   font-size: 6.9rem;
   width: 30%;
 }
 header ul{
   display: flex;
-  // justify-items: flex-end;
   justify-content: flex-end;
-
 }
 header li {
   padding: 10px;
@@ -85,11 +85,40 @@ header {
     color: $blue-frame;
   }
 }
+header img {
+  max-width: 50%;
+  position: relative;
+  bottom: -10px;
+  left: 50%;
+}
+//contact header styles
+.contact-header {
+  background: url(../../under-the-sea-assets/contact-header.jpg);
+  color: #FFFFFF;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
 
 // about styles
 .about {
-  display: flex;
+    display: flex;
   flex-direction: column;
   text-align: center;
   width: 80%;
 }
+.about-section {
+  background: $black-background;
+  color: #FFFFFF;
+}
+.about a {
+  background: $blue-frame;
+  
+}
+

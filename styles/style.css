@@ -274,23 +274,10 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.title-pic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.full-width {
-  left: 5%;
-  margin-right: -10vw;
-  max-width: 80vw;
   position: relative;
-  width: 100vw;
 }
 
-h1 {
+header h1 {
   font-size: 6.9rem;
   width: 30%;
 }
@@ -312,6 +299,22 @@ header ul li:first-child {
   color: #86E0F9;
 }
 
+header img {
+  max-width: 50%;
+  position: relative;
+  bottom: -10px;
+  left: 50%;
+}
+
+.contact-header {
+  background: url(../../under-the-sea-assets/contact-header.jpg);
+  color: #FFFFFF;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,4 +325,13 @@ header ul li:first-child {
           flex-direction: column;
   text-align: center;
   width: 80%;
+}
+
+.about-section {
+  background: #0C1423;
+  color: #FFFFFF;
+}
+
+.about a {
+  background: #86E0F9;
 }
