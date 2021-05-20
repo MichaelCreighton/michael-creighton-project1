@@ -239,6 +239,12 @@ html {
   font-size: 125%;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -248,13 +254,72 @@ a {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 header {
+  background: url(../../under-the-sea-assets/header-image.jpg);
+  color: #FFFFFF;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title-pic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.full-width {
+  left: 5%;
+  margin-right: -10vw;
+  max-width: 80vw;
+  position: relative;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 6.9rem;
+  width: 30%;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header li {
+  padding: 10px;
+}
+
+header ul li:first-child {
+  color: #86E0F9;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 80%;
 }

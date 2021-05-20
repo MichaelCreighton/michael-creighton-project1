@@ -18,6 +18,11 @@ $black-background: #0C1423;
 html {
   font-size: 125%;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 h1,
 h2,
@@ -27,6 +32,12 @@ a {
   padding: 0;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -34,6 +45,51 @@ a {
 
 // header styles
 header {
+  background: url(../../under-the-sea-assets/header-image.jpg);
+  color: #FFFFFF;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.title-pic {
   display: flex;
+}
 
+// This trick comes courtesy of CSS expert Una Kravets.
+//  A simple utility class, .full-width, will break the image out of it’s parent container using some negative margins, relative positioning, and the viewport width (vw) unit of measure.
+.full-width {
+  left: 5%;
+  // margin-left: -50vw;
+  margin-right: -10vw;
+  max-width: 80vw;
+  position: relative;
+  // right: 30%;
+  width: 100vw;
+}
+h1 {
+  font-size: 6.9rem;
+  width: 30%;
+}
+header ul{
+  display: flex;
+  // justify-items: flex-end;
+  justify-content: flex-end;
+
+}
+header li {
+  padding: 10px;
+}
+header {
+  ul li:first-child {
+    color: $blue-frame;
+  }
+}
+
+// about styles
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
 }
