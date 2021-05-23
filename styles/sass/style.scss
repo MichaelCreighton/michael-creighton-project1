@@ -102,22 +102,6 @@ header img {
 }
 
 
-
-// contact header styles
-// .contact-header {
-//   background: url(../../under-the-sea-assets/contact-header.jpg);
-//   color: #FFFFFF;
-//   height: 75vh;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
-// }
-
-
-
-
-
-
 // about styles
 .about {
   display: flex;
@@ -154,8 +138,6 @@ header img {
 .green-with-pics {
   background: $green-background;
   color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
 }
 .green-with-pics h2 {
   font-size: 1.6rem;
@@ -166,15 +148,44 @@ header img {
   padding: 5px 10px;
   font-size: 1rem;
 }
-.green-right,
-.green-left {
-  display: flex;
-
+.green-with-pics img {
+  width: 100%;
+  box-shadow: 30px 30px $blue-frame;
 }
+.green-pic1 img{
+  margin-top: -31px;
+}
+.green-pic2 img{
+  margin-bottom: -40px;
+}
+.green-top,
+.green-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+// .green-bottom {
+//   justify-content: flex-end;
+// }
+// .green-top {
+//   justify-content: flex-start;
+// }
 .green-info1, 
- .green-info2 {
+.green-info2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.green-info2 {
+  padding-left: 30px;
+}
+.green-info1 p, 
+.green-info2 p {
+  width: 70%;
+}
+.green-info2 p {
+  text-align: right ;
 }
 // mid-info section styles
 .mid-info {

@@ -10,16 +10,3 @@
 .blog header h1 {
   font-size: 4rem;
 }
-// nav styles
-nav ul{
-  display: flex;
-  justify-content: flex-end;
-}
-nav li {
-  padding: 10px;
-}
-nav {
-  ul li:first-child {
-    color: $blue-frame;
-  }
-}
