@@ -115,23 +115,20 @@ header img {
   color: #FFFFFF;
   padding: 120px 0;
 }
-.about h2,
-.profile h2 {
+.about h2 {
   padding: 10px 0;
 }
-.about p,
-.profile p {
-  padding: 0 0 20px 0;
+.about p {
+  padding: 0 20px 20px 20px;
 }
-.about a,
-.profile a {
+.about a {
   background: $blue-frame;
   padding: 5px 10px;
   color: $black-background;
   font-size: 1rem;
 }
 .about p {
-  width: 60%;
+  width: 90%;
   text-align: left;
 }
 // green with pics section
@@ -150,70 +147,86 @@ header img {
 }
 .green-with-pics img {
   width: 100%;
-  box-shadow: 30px 30px $blue-frame;
+  // box-shadow: 30px 30px $blue-frame;
 }
 .green-pic1 img{
-  margin-top: -31px;
+  margin-top: -41px;
+  box-shadow: 40px 40px $blue-frame;
 }
 .green-pic2 img{
-  margin-bottom: -40px;
+  margin-bottom: -50px;
+  box-shadow: -40px 40px $blue-frame;
 }
 .green-top,
 .green-bottom {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
-// .green-bottom {
-//   justify-content: flex-end;
-// }
-// .green-top {
-//   justify-content: flex-start;
-// }
-.green-info1, 
-.green-info2 {
+.green-bottom {
+  justify-content: flex-end;
+}
+.green-top {
+  justify-content: flex-start;
+}
+.green-text1, 
+.green-text2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50%;
 }
-.green-info2 {
-  padding-left: 30px;
+.green-text1 {
+  padding: 0 0 60px 180px;
+  align-items: flex-start;
+  text-align: left;
 }
-.green-info1 p, 
-.green-info2 p {
+.green-text2 {
+  padding: 60px 180px 0 0;
+  align-items: flex-end;
+  text-align: right;
+}
+.green-text1 p, 
+.green-text2 p {
   width: 70%;
+  padding: 20px 0;
 }
-.green-info2 p {
-  text-align: right ;
-}
+
+
 // mid-info section styles
 .mid-info {
   background: $black-background;
   color: #FFFFFF;
 }
-i {
-  background: $blue-frame;
-  color: $black-background;
-  padding: 10px;
-  border-radius: 50%;
-  margin-right: 23px;
-  font-size: 1rem;
-}
-
 .info {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   padding: 160px 0 60px 0;
 }
+i {
+  background: $blue-frame;
+  color: $black-background;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 1rem;
+}
+// pixel size adjustments to align these two logos
+.community i {
+  margin-right: 16px;
+}
+.blog i {
+  margin-right: 26px;
+}
 .info h2 {
   padding-left: 20px;
 }
 .info p {
-  // padding-left: 80px;
   padding: 10px 0 40px 80px;
 }
+
+
 // profile section
 .profile {
   background: $black-background;
@@ -231,7 +244,7 @@ i {
   width: 25%;
   box-shadow: 30px 30px $blue-frame;
 }
-.profile-info {
+.profile-text {
   width: 70%;
   // display: flex;
   flex-direction: column;
@@ -239,12 +252,19 @@ i {
   align-items: left;
   padding-left: 80px;
 }
-.profile a {
-  // display: inline;
+.profile-text h2 {
+  font-size: 2.1rem;
+  padding: 10px 0;
 }
-.profile-info p {
-  width: 80%;
-  padding: 10px 0 30px 0;
+.profile-text p {
+  width: 100%;
+  padding: 10px 0 60px 0;
+}
+.profile a {
+  background: $blue-frame;
+  padding: 5px 10px;
+  color: $black-background;
+  font-size: 1rem;
 }
 // gallery styles
 .gallery {
