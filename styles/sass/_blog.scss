@@ -2,13 +2,17 @@
 .blog header {
   background: url(../under-the-sea-assets/blog-header.jpg);
   color: #FFFFFF;
-  height: 75vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .blog header h1 {
   font-size: 4rem;
+  // width: 50%;
+  padding-top: 10vh;
+  padding-left: 25vw;
+
 }
 .blog main {
   background: $black-background;
@@ -56,7 +60,6 @@ aside li {
   letter-spacing: 1px;
 }
 .right {
-  // margin-top: -80px;
   display: flex;
   flex-direction: column;
   width: 90%;

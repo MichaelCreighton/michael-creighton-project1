@@ -2,7 +2,7 @@
 .contact header {
   background: url(../under-the-sea-assets/contact-header.jpg);
   color: #FFFFFF;
-  height: 75vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,6 +11,7 @@
   background: $black-background;
   color: #FFFFFF;
 }
+
 .contact h2 {
   font-size: 4rem;
 }
@@ -48,7 +49,11 @@
 
 // form styles
 .form-info {
-  // margin-top: -100px;
+  margin-top: -300px;
+  margin-bottom: 100px;
+  width: 70%;
+  z-index: 10;
+
 }
 input,
 textarea {
@@ -63,10 +68,12 @@ textarea {
   padding: 60px 40px 40px 40px;
   margin: 20px 0 60px 0;
 }
-// legend {
-//   font-size: 4rem;
-//   padding-bottom: 100px;
-// }
+legend {
+  font-size: 4rem;
+  padding-bottom: 120px;
+  margin-left: -40px;
+  margin-bottom: -75px;
+}
 input {
   padding: 0 0 10px 20px;
   border-bottom: 1px solid $blue-frame;

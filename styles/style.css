@@ -238,7 +238,7 @@ html {
 .contact header {
   background: url(../under-the-sea-assets/contact-header.jpg);
   color: #FFFFFF;
-  height: 75vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -293,6 +293,13 @@ html {
   color: #FFFFFF;
 }
 
+.form-info {
+  margin-top: -300px;
+  margin-bottom: 100px;
+  width: 70%;
+  z-index: 10;
+}
+
 input,
 textarea {
   background: #0F614E;
@@ -307,6 +314,13 @@ textarea {
           box-shadow: -30px 30px #86E0F9;
   padding: 60px 40px 40px 40px;
   margin: 20px 0 60px 0;
+}
+
+legend {
+  font-size: 4rem;
+  padding-bottom: 120px;
+  margin-left: -40px;
+  margin-bottom: -75px;
 }
 
 input {
@@ -355,7 +369,7 @@ input[type=submit] {
 .blog header {
   background: url(../under-the-sea-assets/blog-header.jpg);
   color: #FFFFFF;
-  height: 75vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -363,6 +377,8 @@ input[type=submit] {
 
 .blog header h1 {
   font-size: 4rem;
+  padding-top: 10vh;
+  padding-left: 25vw;
 }
 
 .blog main {
@@ -619,7 +635,8 @@ nav ul li:first-child {
 }
 
 header {
-  background: url(../under-the-sea-assets/header-image.jpg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.4))), url(../under-the-sea-assets/header-image.jpg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.4)), url(../under-the-sea-assets/header-image.jpg);
   color: #FFFFFF;
   height: 75vh;
   background-repeat: no-repeat;
