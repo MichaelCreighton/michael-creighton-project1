@@ -10,6 +10,7 @@ $black-background: #0C1423;
 @import "./blog";
 
 
+
 // general styles
 html {
   font-size: 125%;
@@ -58,29 +59,34 @@ nav ul{
 nav li {
   padding: 10px;
 }
-nav {
-  ul li:first-child {
-    color: $blue-frame;
-  }
+ul a {
+  color: #FFFFFF;
 }
+nav li:first-child {
+  color: $blue-frame;
+}
+// nav {
+//   li a:first-child {
+//   color: $blue-frame;
+//   }
+// }
 
 //index header styles
 header {
   background: linear-gradient(to top, rgba(0,0,0,0.1) 10%, rgba(0,0,0,0.4)), url(../under-the-sea-assets/header-image.jpg);
-  // background: $blue-frame;
   color: #FFFFFF;
-  height: 75vh;
+  height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 header h1 {
-  // display: inline-block;
   font-size: 6.9rem;
   width: 30%;
 }
 header img {
+  // display: block;
   max-width: 50%;
   position: absolute;
   bottom: -80px;
@@ -106,6 +112,7 @@ header img {
 }
 .about p {
   padding: 0 20px 20px 20px;
+  text-align: center;
 }
 .about a {
   background: $blue-frame;
@@ -133,7 +140,6 @@ header img {
 }
 .green-with-pics img {
   width: 100%;
-  // box-shadow: 30px 30px $blue-frame;
 }
 .green-pic1 img{
   margin-top: -41px;
@@ -163,12 +169,12 @@ header img {
   width: 50%;
 }
 .green-text1 {
-  padding: 0 0 60px 180px;
+  padding: 60px 0 60px 180px;
   align-items: flex-start;
   text-align: left;
 }
 .green-text2 {
-  padding: 60px 180px 0 0;
+  padding: 60px 180px 60px 0;
   align-items: flex-end;
   text-align: right;
 }
@@ -189,6 +195,9 @@ header img {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   padding: 160px 0 60px 0;
+}
+.mid-info .info {
+  padding-left: 20px;
 }
 i {
   background: $blue-frame;
@@ -220,15 +229,15 @@ i {
 }
 .profile-content {
   display: flex;
-}
-.profile-content {
   background: $black-background;
   color: #FFFFFF;
   padding: 90px 0;
+  padding-left: 20px;
 }
-.profile-pic {
-  width: 25%;
+.profile-pic img{
+  width: 100%;
   box-shadow: 30px 30px $blue-frame;
+  
 }
 .profile-text {
   width: 70%;
@@ -236,7 +245,7 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  padding-left: 80px;
+  padding: 0 20px 0 80px;
 }
 .profile-text h2 {
   font-size: 2.1rem;
@@ -260,7 +269,6 @@ i {
 .gallery-pics {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  // grid-template-rows: 300px 300px;
   gap: 30px;
 }
 
@@ -270,3 +278,6 @@ footer {
   text-align: center;
   padding: 7px 0;
 }
+
+// Import media queries
+@import "./media-queries";

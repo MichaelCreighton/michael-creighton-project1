@@ -1,0 +1,128 @@
+// Media Queries
+
+@media (max-width: 1140px) {
+  header {
+    height: 50vh;
+  }
+  .green-pic1 img,
+  .green-pic2 img {
+    box-shadow: none;
+    border: 2px solid $blue-frame;
+  }
+  .green-pic1 img {
+    margin-top: 30px;
+  }
+  .green-text1 {
+  padding: 60px 0 60px 60px;
+  }
+  .green-text2 {
+    padding: 60px 60px 60px 0;
+  }
+  .mid-info .info {
+  padding: 40px 0 40px 0;
+  }
+  .profile-pic img {
+    box-shadow: none;
+    border: 2px solid $blue-frame;
+  }
+} 
+
+// max-width 1025
+@media(max-width: 1025px) {
+
+  .green-with-pics {
+    width: 100%;
+    padding: 10px;
+  }
+  .green-text1 {
+    padding: 20px 0 20px 20px;
+    width: 90%;
+  }
+  .green-text2 {
+    padding: 20px 20px 20px 0;
+    width: 90%;
+  }
+  .gallery {
+    padding: 10px;
+  }
+  .gallery-pics {
+    padding: 20px;
+    gap: 10px;
+  }
+}
+
+// max-width 769
+@media(max-width: 769px) {
+  header img {
+    display: none;
+  }
+  header h1 {
+    font-size: 5rem;
+    padding-left: 3rem;
+  }
+  .about-section {
+    padding: 20px 0;
+  }
+  .about h2 {
+    font-size: 1.6rem;
+  }
+  .green-with-pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+  }
+  .green-top {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .green-bottom {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .green-text1,
+  .green-text2 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .green-pic2 {
+    padding-right: 0;
+  }
+  .green-pic2 img{
+    margin-bottom: 20px;
+  }
+  .mid-info .info {
+    grid-template-columns: 100%;
+    padding: 40px 20px;
+  }
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-text {
+    text-align: center;
+    padding: 0;
+  }
+  .profile-pic {
+    width: 80%;
+    padding: 20px;
+
+  }
+}
+
+//max-width 481
+@media(max-width: 481px) {
+  header h1 {
+    font-size: 4rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+//max-width 320
+@media(max-width: 320) {
+
+}
