@@ -382,6 +382,7 @@ input[type=submit] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
 }
 
 aside {
@@ -405,7 +406,7 @@ aside h2 {
 }
 
 aside p {
-  padding: 20px 10px 60px 10px;
+  padding: 20px 10px 60px 0;
 }
 
 .aside-text {
@@ -413,15 +414,19 @@ aside p {
   margin-right: -10px;
   margin-left: 15%;
   padding: 20px;
+  letter-spacing: 1px;
+  line-height: 1.4rem;
 }
 
 aside ul {
-  padding: 0;
+  padding: 0 0 0 20px;
+  line-height: 1.4rem;
 }
 
 aside li {
   list-style: disc;
   font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
 }
 
 .right {
@@ -433,25 +438,38 @@ aside li {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
+  position: relative;
 }
-.right img {
+.right h2 {
+  font-size: 1.6rem;
+  padding: 20px 0 5px 0;
+}
+
+.first-pic {
+  margin-left: 30px;
   -webkit-box-shadow: -30px 30px #86E0F9;
           box-shadow: -30px 30px #86E0F9;
+  position: absolute;
+  top: -400px;
 }
 
 .blog-story {
   color: #FFFFFF;
-  margin-top: 60px;
+  padding-left: 40px;
+  margin-top: 151px;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
   border-left: 4px solid #86E0F9;
   border-bottom: 4px solid #86E0F9;
-  max-height: 800px;
-  overflow: auto;
-  scrollbar-width: none;
 }
 
 .text-1 p:first-child,
 .text-2 p:first-child {
   padding-bottom: 20px;
+}
+
+.blog-story p {
+  padding-bottom: 60px;
 }
 
 .comments {
@@ -468,15 +486,23 @@ aside li {
   font-size: 1.6rem;
   padding: 20px 0 40px 0;
 }
-.comments img {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
 
 .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.comment img {
+  width: 30%;
+  height: 30%;
+  padding-left: 10px;
+}
+.comment p {
+  padding: 0 0 80px 20px;
+  width: 100%;
 }
 
 .blog-form input,
