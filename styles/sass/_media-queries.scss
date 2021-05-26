@@ -1,5 +1,6 @@
 // Media Queries
 
+// max-width 1140
 @media (max-width: 1140px) {
   header {
     height: 50vh;
@@ -29,7 +30,7 @@
 
 // max-width 1025
 @media(max-width: 1025px) {
-
+  // index styles
   .green-with-pics {
     width: 100%;
     padding: 10px;
@@ -49,7 +50,49 @@
     padding: 20px;
     gap: 10px;
   }
+
+  // contact styles
+  .contact header {
+    height: 50vh;
+  }
+  .contact-list {
+    display: flex;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact i {
+    padding: 0 0 28px 0;
+  }
+  // .info-text ul {
+  //   display: flex;
+
+  // }
+  .form-info {
+    fieldset {
+    box-shadow: none;
+    }
+    legend {
+      font-size: 3rem;
+      padding-bottom: 120px;
+      margin: 0 auto;
+    }
+  }
+  .form-info {
+  margin-top: 20px 80px 80px 20px;
+  margin-bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  z-index: auto;
+  padding-left: 20px;
+  }
+  .contact .info {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
 }
+
 
 // max-width 769
 @media(max-width: 769px) {
@@ -109,7 +152,32 @@
   .profile-pic {
     width: 80%;
     padding: 20px;
+  }
 
+  // contact styles
+  .contact header {
+    height: 35vh;
+  }
+  form {
+    grid-template-columns: 100%;
+  }
+  #name {
+    grid-column: 1 / 2;
+  }
+  #email {
+    grid-column: 1 / 2;
+  }
+  #message {
+    grid-column: 1 / 2;
+  }
+  input {
+    padding-left: 15px 0 10px 20px;
+  }
+  input:nth-child(2) {
+    margin-right: 0;
+  }
+  input {
+    padding: 20px 0 10px 20px;
   }
 }
 
@@ -120,9 +188,35 @@
     padding-left: 2rem;
     padding-top: 2rem;
   }
+
+  // contact styles
+  .form-info {
+    padding-left: 0;
+    padding-right: 0;
+    legend {
+      font-size: 1.6rem;
+      padding-bottom: 80px;
+    }
+    fieldset {
+      padding: 0 40px 40px 40px;
+    }
+  }
+
+
 }
 
 //max-width 320
 @media(max-width: 320) {
 
+}
+
+// this is used to solve an outlying problem where
+// the img in the header obscures the nav at > 1600px
+@media(min-width: 1600px) {
+  header img {
+  max-width: 40%;
+  position: absolute;
+  bottom: -80px;
+  left: 60%;
+  }
 }

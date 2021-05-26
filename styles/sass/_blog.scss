@@ -84,6 +84,12 @@ aside li {
   letter-spacing: 1px;
   border-left: 4px solid $blue-frame;
   border-bottom: 4px solid $blue-frame;
+  p {
+    padding-bottom: 60px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+  }
+  //possible addition?:
   // set a max height in case the story is long 
   // max-height: 800px;
   // overflow: auto;
@@ -94,9 +100,8 @@ aside li {
 .text-2 p:first-child {
   padding-bottom: 20px;
 }
-.blog-story p {
-  padding-bottom: 60px;
-}
+
+//comments styles
 .comments {
   display: flex;
   flex-direction: column;
