@@ -9,10 +9,10 @@
 }
 .blog header h1 {
   font-size: 4rem;
-  // width: 50%;
-  padding-top: 10vh;
-  padding-left: 25vw;
-
+  // padding-top: 10vh;
+  // padding-left: 25vw;
+  padding-top: 10%;
+  padding-left: 40%;
 }
 .blog main {
   background: $black-background;
@@ -70,6 +70,12 @@ aside li {
     }
     
 }
+.right h1 {
+  color: #FFFFFF;
+  font-size: 4rem;
+  position: absolute;
+  top: -500px;
+}
 .first-pic {
   margin-left: 30px;
   box-shadow: -30px 30px $blue-frame;
@@ -85,7 +91,7 @@ aside li {
   border-left: 4px solid $blue-frame;
   border-bottom: 4px solid $blue-frame;
   p {
-    padding-bottom: 60px;
+    padding: 0 20px 60px 0;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
   }
@@ -121,7 +127,7 @@ aside li {
     padding-left: 10px;
   }
   p {
-    padding: 0 0 80px 20px;
+    padding: 0 20px 80px 20px;
     width: 100%;
   }
 }
@@ -140,7 +146,7 @@ aside li {
   background: $black-background;
   border: 0;
   // padding: 60px 40px 40px 40px;
-  margin: 20px 0 60px 0;
+  margin: 20px 20px 60px 0;
 }
 .blog-form input {
   padding: 0 0 10px 20px;
@@ -154,17 +160,17 @@ aside li {
   border: 1px solid $blue-frame;
   margin-top: 30px;
 }
-.blog-form form {
+form {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.blog-form #name {
+#name {
   grid-column: 1 / 2;
 }
-.blog-form #email {
+#email {
   grid-column: 2 / 3;
 }
-.blog-form #message {
+#message {
   grid-column: 1 / 3;
 }
 .blog-form input[type="submit"] {
