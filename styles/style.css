@@ -243,16 +243,19 @@ html {
   background-size: cover;
   background-position: center;
 }
-
 .contact main {
   background: #0C1423;
   color: #FFFFFF;
 }
-
 .contact h2 {
   font-size: 4rem;
 }
-
+.contact i {
+  font-size: 1rem;
+  background: #0C1423;
+  color: #FFFFFF;
+  padding: 0 0 15px 0;
+}
 .contact .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,9 +268,13 @@ html {
           align-items: center;
   padding: 20px 0 0 20px;
 }
-
-.contact i {
-  padding: 0 0 15px 0;
+.contact .info ul {
+  padding-left: 0;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+.contact .info li {
+  font-weight: normal;
 }
 
 .info-text a {
@@ -277,22 +284,6 @@ html {
   letter-spacing: 2px;
 }
 
-.info-text ul {
-  padding-left: 0;
-  line-height: 29px;
-  letter-spacing: 1px;
-}
-
-.info-text li {
-  font-weight: normal;
-}
-
-.contact-list i {
-  font-size: 1rem;
-  background: #0C1423;
-  color: #FFFFFF;
-}
-
 .form-info {
   margin-top: -300px;
   margin-bottom: 100px;
@@ -300,14 +291,6 @@ html {
   width: 70%;
   z-index: 10;
 }
-
-input,
-textarea {
-  background: #0F614E;
-  border: none;
-  color: #FFFFFF;
-}
-
 .form-info fieldset {
   background: #0F614E;
   border: 0;
@@ -316,24 +299,26 @@ textarea {
   padding: 60px 40px 40px 40px;
   margin: 20px 0 60px 0;
 }
-
-legend {
+.form-info legend {
   font-size: 4rem;
   padding-bottom: 120px;
   margin-left: -40px;
   margin-bottom: -75px;
 }
-
-input {
+.form-info input,
+.form-info textarea {
+  background: #0F614E;
+  border: none;
+  color: #FFFFFF;
+}
+.form-info input {
   padding: 0 0 10px 20px;
   border-bottom: 1px solid #86E0F9;
 }
-
-input:nth-child(2) {
+.form-info input:nth-child(2) {
   margin-right: 30px;
 }
-
-textarea {
+.form-info textarea {
   padding: 20px 0 0 20px;
   border: 1px solid #86E0F9;
   margin-top: 30px;
@@ -526,7 +511,7 @@ aside li {
   padding-left: 10px;
 }
 .comment p {
-  padding: 0 20px 80px 20px;
+  padding: 0 20px 40px 20px;
   width: 100%;
 }
 
@@ -1245,6 +1230,11 @@ footer {
 
   .contact header {
     height: 30vh;
+  }
+
+  .blog-story p {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
   }
 }
 @media (min-width: 1600px) {

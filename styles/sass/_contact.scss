@@ -1,50 +1,46 @@
 
-.contact header {
-  background: url(../under-the-sea-assets/contact-header.jpg);
-  color: #FFFFFF;
-  height: 60vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.contact main{
-  background: $black-background;
-  color: #FFFFFF;
-}
-
-.contact h2 {
-  font-size: 4rem;
-}
-.contact .info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0 0 20px;
-}
-.contact i {
-  // padding-right: 0;
-  // padding-left: 0;
-  padding: 0 0 15px 0;
+.contact {
+  header {
+    background: url(../under-the-sea-assets/contact-header.jpg);
+    color: #FFFFFF;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  main{
+    background: $black-background;
+    color: #FFFFFF;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  i {
+    font-size: 1rem;
+    background: $black-background;
+    color: #FFFFFF;
+    padding: 0 0 15px 0;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 0 20px;
+    ul {
+      padding-left: 0;
+      line-height: 29px;
+      letter-spacing: 1px;
+    }
+    li {
+      font-weight: normal;
+    }
+  }
 }
 .info-text a {
   color: #FFFFFF;
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 2px;
-}
-.info-text ul {
-  padding-left: 0;
-  line-height: 29px;
-  letter-spacing: 1px;
-}
-.info-text li {
-  font-weight: normal;
-}
-.contact-list i {
-  font-size: 1rem;
-  background: $black-background;
-  color: #FFFFFF;
-  // padding: 10px;
 }
 
 // form styles
@@ -55,37 +51,38 @@
   width: 70%;
   z-index: 10;
 
-}
-input,
-textarea {
-  background: $green-background;
-  border: none;
-  color: #FFFFFF;
-}
-.form-info fieldset {
-  background: $green-background;
-  border: 0;
-  box-shadow: -30px 30px $blue-frame;
-  padding: 60px 40px 40px 40px;
-  margin: 20px 0 60px 0;
-}
-legend {
-  font-size: 4rem;
-  padding-bottom: 120px;
-  margin-left: -40px;
-  margin-bottom: -75px;
-}
-input {
-  padding: 0 0 10px 20px;
-  border-bottom: 1px solid $blue-frame;
-}
-input:nth-child(2) {
-  margin-right: 30px;
-}
-textarea {
-  padding: 20px 0 0 20px;
-  border: 1px solid $blue-frame;
-  margin-top: 30px;
+  fieldset {
+    background: $green-background;
+    border: 0;
+    box-shadow: -30px 30px $blue-frame;
+    padding: 60px 40px 40px 40px;
+    margin: 20px 0 60px 0;
+  }
+  legend {
+    font-size: 4rem;
+    padding-bottom: 120px;
+    margin-left: -40px;
+    margin-bottom: -75px;
+  }
+  input,
+  textarea {
+    background: $green-background;
+    border: none;
+    color: #FFFFFF;
+  }
+  input {
+    padding: 0 0 10px 20px;
+    border-bottom: 1px solid $blue-frame;
+  }
+  input:nth-child(2) {
+    margin-right: 30px;
+  }
+  textarea {
+    padding: 20px 0 0 20px;
+    border: 1px solid $blue-frame;
+    margin-top: 30px;
+  }
+
 }
 form {
   display: grid;
