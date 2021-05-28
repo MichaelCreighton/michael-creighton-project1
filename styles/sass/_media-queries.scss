@@ -250,12 +250,13 @@
   .form-info {
     padding-left: 0;
     padding-right: 0;
+
     legend {
       font-size: 1.6rem;
       padding-bottom: 80px;
     }
     fieldset {
-      padding: 0 40px 40px 40px;
+      padding: 0 40px 40px 25px;
     }
   }
   // contact styles
@@ -274,10 +275,6 @@
 
 }
 
-//max-width 320
-@media(max-width: 320) {
-
-}
 
 // this is used to solve an outlying problem where
 // the img in the header obscures the nav at > 1600px

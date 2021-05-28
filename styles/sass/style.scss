@@ -60,41 +60,39 @@ header {
   background-size: cover;
   background-position: center;
   position: relative;
+
+  h1 {
+    font-size: 6.9rem;
+    width: 30%;
+    padding-left: 20px;
+  }
+  img {
+    max-width: 50%;
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+  }
 }
 // nav styles
-nav ul{
+nav {
+  ul{
   display: flex;
   justify-content: flex-end;
   margin-top: 0;
-}
-nav li {
-  padding: 15px;
-}
-nav a {
-  color: #FFFFFF;
-  transition: all 150ms;
-  padding: 5px;
-}
-nav a:hover {
-  color: $blue-frame;
-  box-shadow: 4px 4px 3px 3px $blue-frame;
-  // border: solid 3px $blue-frame;
-  border-radius: 50%;
-
-}
-header h1 {
-  font-size: 6.9rem;
-  width: 30%;
-  padding-left: 20px;
-}
-header img {
-  // float: right;
-  // max-width: 50vw;
-  // margin-right: 0;
-  max-width: 50%;
-  position: absolute;
-  bottom: -80px;
-  left: 50%;
+  }
+  li {
+    padding: 15px;
+  }
+   a {
+    color: #FFFFFF;
+    transition: all 150ms;
+    padding: 5px;
+  }
+  a:hover {
+    color: $blue-frame;
+    box-shadow: 4px 4px 3px 3px $blue-frame;
+    border-radius: 50%;
+  }
 }
 
 
@@ -105,46 +103,48 @@ header img {
   text-align: center;
   align-items: center;
   font-size: 2.1rem;
+
+  h2 {
+    padding: 10px 0;
+  }
+  p {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    width: 90%;
+    text-align: left;
+  }
+  a {
+    background: $blue-frame;
+    padding: 5px 10px;
+    color: $black-background;
+    font-size: 1rem;
+  }
+
 }
 .about-section {
   background: $black-background;
   color: #FFFFFF;
   padding: 120px 0;
 }
-.about h2 {
-  padding: 10px 0;
-}
-.about p {
-  padding: 0 20px 20px 20px;
-  text-align: center;
-}
-.about a {
-  background: $blue-frame;
-  padding: 5px 10px;
-  color: $black-background;
-  font-size: 1rem;
-}
-.about p {
-  width: 90%;
-  text-align: left;
-}
+
 // green with pics section
 .green-with-pics {
   background: $green-background;
   color: #FFFFFF;
+  h2 {
+    font-size: 1.6rem;
+  }
+  a {
+    background: $black-background;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+  img {
+    width: 100%;
+  }
 }
-.green-with-pics h2 {
-  font-size: 1.6rem;
-}
-.green-with-pics a {
-  background: $black-background;
-  color: #FFFFFF;
-  padding: 5px 10px;
-  font-size: 1rem;
-}
-.green-with-pics img {
-  width: 100%;
-}
+
 .green-pic1 img{
   margin-top: -41px;
   box-shadow: 40px 40px $blue-frame;
@@ -156,7 +156,6 @@ header img {
 .green-top,
 .green-bottom {
   display: flex;
-  // justify-content: space-between;
 }
 .green-bottom {
   justify-content: flex-end;
@@ -193,16 +192,15 @@ header img {
 .mid-info {
   background: $black-background;
   color: #FFFFFF;
+
+  .info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 160px 0 60px 0;
+  }
 }
-.mid-info .info {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  padding: 160px 0 60px 0;
-}
-.mid-info .info {
-  padding-left: 20px;
-}
+
 i {
   background: $blue-frame;
   color: $black-background;
@@ -230,6 +228,13 @@ i {
 .profile {
   background: $black-background;
   color: #FFFFFF;
+
+  a {
+    background: $blue-frame;
+    padding: 5px 10px;
+    color: $black-background;
+    font-size: 1rem;
+  }
 }
 .profile-content {
   display: flex;
@@ -245,7 +250,6 @@ i {
 }
 .profile-text {
   width: 70%;
-  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
@@ -259,12 +263,7 @@ i {
   width: 100%;
   padding: 10px 0 60px 0;
 }
-.profile a {
-  background: $blue-frame;
-  padding: 5px 10px;
-  color: $black-background;
-  font-size: 1rem;
-}
+
 // gallery styles
 .gallery {
   background: $green-background;

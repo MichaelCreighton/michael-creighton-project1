@@ -445,6 +445,7 @@ aside li {
 .right h2 {
   font-size: 1.6rem;
   padding: 20px 0 5px 0;
+  line-height: 1.3rem;
 }
 
 .right h1 {
@@ -619,6 +620,17 @@ header {
   background-position: center;
   position: relative;
 }
+header h1 {
+  font-size: 6.9rem;
+  width: 30%;
+  padding-left: 20px;
+}
+header img {
+  max-width: 50%;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+}
 
 nav ul {
   display: -webkit-box;
@@ -629,36 +641,20 @@ nav ul {
           justify-content: flex-end;
   margin-top: 0;
 }
-
 nav li {
   padding: 15px;
 }
-
 nav a {
   color: #FFFFFF;
   -webkit-transition: all 150ms;
   transition: all 150ms;
   padding: 5px;
 }
-
 nav a:hover {
   color: #86E0F9;
   -webkit-box-shadow: 4px 4px 3px 3px #86E0F9;
           box-shadow: 4px 4px 3px 3px #86E0F9;
   border-radius: 50%;
-}
-
-header h1 {
-  font-size: 6.9rem;
-  width: 30%;
-  padding-left: 20px;
-}
-
-header img {
-  max-width: 50%;
-  position: absolute;
-  bottom: -80px;
-  left: 50%;
 }
 
 .about {
@@ -675,22 +671,15 @@ header img {
           align-items: center;
   font-size: 2.1rem;
 }
-
-.about-section {
-  background: #0C1423;
-  color: #FFFFFF;
-  padding: 120px 0;
-}
-
 .about h2 {
   padding: 10px 0;
 }
-
 .about p {
   padding: 0 20px 20px 20px;
   text-align: center;
+  width: 90%;
+  text-align: left;
 }
-
 .about a {
   background: #86E0F9;
   padding: 5px 10px;
@@ -698,27 +687,25 @@ header img {
   font-size: 1rem;
 }
 
-.about p {
-  width: 90%;
-  text-align: left;
+.about-section {
+  background: #0C1423;
+  color: #FFFFFF;
+  padding: 120px 0;
 }
 
 .green-with-pics {
   background: #0F614E;
   color: #FFFFFF;
 }
-
 .green-with-pics h2 {
   font-size: 1.6rem;
 }
-
 .green-with-pics a {
   background: #0C1423;
   color: #FFFFFF;
   padding: 5px 10px;
   font-size: 1rem;
 }
-
 .green-with-pics img {
   width: 100%;
 }
@@ -798,16 +785,11 @@ header img {
   background: #0C1423;
   color: #FFFFFF;
 }
-
 .mid-info .info {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   padding: 160px 0 60px 0;
-}
-
-.mid-info .info {
-  padding-left: 20px;
 }
 
 i {
@@ -838,6 +820,12 @@ i {
 .profile {
   background: #0C1423;
   color: #FFFFFF;
+}
+.profile a {
+  background: #86E0F9;
+  padding: 5px 10px;
+  color: #0C1423;
+  font-size: 1rem;
 }
 
 .profile-content {
@@ -879,13 +867,6 @@ i {
 .profile-text p {
   width: 100%;
   padding: 10px 0 60px 0;
-}
-
-.profile a {
-  background: #86E0F9;
-  padding: 5px 10px;
-  color: #0C1423;
-  font-size: 1rem;
 }
 
 .gallery {
@@ -1225,7 +1206,7 @@ footer {
     padding-bottom: 80px;
   }
   .form-info fieldset {
-    padding: 0 40px 40px 40px;
+    padding: 0 40px 40px 25px;
   }
 
   .contact header {
