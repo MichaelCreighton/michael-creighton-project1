@@ -59,7 +59,7 @@ aside li {
 .right {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
   position: relative;
     h2 {
       font-size: 1.6rem;
@@ -72,18 +72,18 @@ aside li {
   color: #FFFFFF;
   font-size: 4rem;
   position: absolute;
-  top: -500px;
+  top: -300px;
 }
 .first-pic {
   margin-left: 30px;
   box-shadow: -30px 30px $blue-frame;
   position: absolute;
-  top: -400px;
+  top: -200px;
 }
 .blog-story {
   color: #FFFFFF;
   padding-left: 40px;
-  margin-top: 151px;
+  margin-top: 329px;
   line-height: 1.2rem;
   letter-spacing: 1px;
   border-left: 4px solid $blue-frame;
