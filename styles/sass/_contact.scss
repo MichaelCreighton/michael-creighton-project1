@@ -15,11 +15,13 @@
   h2 {
     font-size: 4rem;
   }
-  i {
-    font-size: 1rem;
-    background: $black-background;
-    color: #FFFFFF;
-    padding: 0 0 15px 0;
+  .icons {
+    i {
+      font-size: 1rem;
+      background: $black-background;
+      color: #FFFFFF;
+      padding: 0 0 15px 0;
+    }
   }
   .info {
     display: flex;

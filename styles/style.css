@@ -250,7 +250,7 @@ html {
 .contact h2 {
   font-size: 4rem;
 }
-.contact i {
+.contact .icons i {
   font-size: 1rem;
   background: #0C1423;
   color: #FFFFFF;
@@ -664,7 +664,7 @@ nav i {
 }
 nav i {
   margin-top: 9px;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   padding: 10px;
 }
 nav a:hover,
