@@ -74,26 +74,44 @@ header {
   }
 }
 // nav styles
+
 nav {
+  display: flex;
+  justify-content: flex-end;
+
   ul{
   display: flex;
   justify-content: flex-end;
   margin-top: 0;
+  transition: all 1s;
   }
   li {
     padding: 15px;
   }
-   a {
+   a,
+   i {
     color: #FFFFFF;
     transition: all 150ms;
     padding: 5px;
+    background: none;
   }
-  a:hover {
+  i {
+    margin-top: 9px;
+    font-size: 2.2rem;
+    padding: 10px;
+  }
+  a:hover, 
+  i:hover {
     color: $blue-frame;
     box-shadow: 4px 4px 3px 3px $blue-frame;
     border-radius: 50%;
   }
 }
+// a class to hide the nav until hammy is clicked
+.no-show {
+  transform: rotate(900deg) scale(0);
+}
+
 
 
 // about styles

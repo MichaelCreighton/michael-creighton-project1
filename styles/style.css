@@ -632,6 +632,14 @@ header img {
   left: 50%;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,21 +648,36 @@ nav ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 nav li {
   padding: 15px;
 }
-nav a {
+nav a,
+nav i {
   color: #FFFFFF;
   -webkit-transition: all 150ms;
   transition: all 150ms;
   padding: 5px;
+  background: none;
 }
-nav a:hover {
+nav i {
+  margin-top: 9px;
+  font-size: 2.2rem;
+  padding: 10px;
+}
+nav a:hover,
+nav i:hover {
   color: #86E0F9;
   -webkit-box-shadow: 4px 4px 3px 3px #86E0F9;
           box-shadow: 4px 4px 3px 3px #86E0F9;
   border-radius: 50%;
+}
+
+.no-show {
+  -webkit-transform: rotate(900deg) scale(0);
+          transform: rotate(900deg) scale(0);
 }
 
 .about {
